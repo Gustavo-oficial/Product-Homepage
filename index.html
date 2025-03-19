@@ -320,6 +320,10 @@
             width: 100%;
         }
 
+        .categories-text-plans {
+            width: 100%;
+        }
+
         .category-list {
             list-style-type: none;
             font-size: 24px;
@@ -338,8 +342,26 @@
             font-size: 24px; /* Aumentando o tamanho do ícone */
         }
 
+        .categories-text-plans .category-list a {
+            display: flex; /* Faz o link ocupar toda a largura como um item de lista */
+            align-items: center; /* Alinha os ícones ao centro */
+            text-decoration: none; /* Remove sublinhado */
+            color: inherit; /* Mantém a cor do texto igual ao restante */
+            font-size: 16px; /* Ajusta o tamanho da fonte se necessário */
+            padding: 8px 0; /* Adiciona espaçamento */
+        }
+
+        .categories-text-plans .category-list a i {
+            margin-right: 8px; /* Adiciona espaço entre o ícone e o texto */
+            font-size: 18px; /* Ajusta o tamanho do ícone */
+        }
+
+        .categories-text-plans {
+            display: block; /* Garante que a div ocupe o espaço correto */
+        }
+
         /* Esconde as seções de conteúdo inicialmente */
-        #vitaminas-content, #beneficios-content {
+        #vitaminas-content, #beneficios-content #plans-content {
             display: none;
         }
 
@@ -375,13 +397,12 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>RETINALON. Resultados reais</h1>
+            <h1>RETINALON Resultados reais</h1>
             <p class="hero-text">
                 Transforme sua saúde com o melhor em cada gota – compre agora e sinta a diferença!
             </p>
-            <button class="shop-now-btn">
+            <button class="shop-now-btn" onclick="window.location.href='https://ev.braip.com/checkout/proymere/pre-visualizacao/plaz2ljz/chezepqr'">
                 Comprar Agora
-                <i class="fas fa-arrow-right"></i>
             </button>
         </div>
         
@@ -424,6 +445,7 @@
                 <div class="categories-tabs">
                     <div class="category-tab" id="vitaminas-tab">Vitaminas</div>
                     <div class="category-tab active" id="beneficios-tab">Benefícios</div>
+                    <div class="category-tab" id="plans-tab">Planos de Tratamento</div>
                 </div>
                 <div class="categories-text" id="vitaminas-content" class="category-content">
                     <ul class="category-list">
@@ -441,6 +463,35 @@
                         <li><i class="fas fa-check-circle"></i> Melhora a saúde ocular</li>
                         <li><i class="fas fa-check-circle"></i> Fórmula natural</li>
                         <li><i class="fas fa-check-circle"></i> Fácil de usar em gotas</li>
+                    </ul>
+                </div>
+
+                <div class="categories-text-plans" id="plans-content" class="category-content">
+                    <ul class="category-list">
+                        <a href="https://ev.braip.com/checkout/proymere/pre-visualizacao/plaz2ljz/chezepqr" class="text-decoration-none">
+                            <i class="fas fa-check-circle"></i> NEGOCIAÇÃO - RETINALON - 2 MESES (2 gotas)
+                        </a>    
+                        <a href="https://ev.braip.com/checkout/playgxwe/chezepqr" class="text-decoration-none">
+                            <i class="fas fa-check-circle"></i> RETINALON - 2 MESES (2 gotas)
+                        </a>       
+                        <a href="https://ev.braip.com/checkout/plaxq29l/chezepqr" class="text-decoration-none">
+                            <i class="fas fa-check-circle"></i> REMARKETING - RETINALON - 4 MESES (4 gotas)
+                        </a>    
+                        <a href="https://ev.braip.com/checkout/plaovyn6/chezepqr" class="text-decoration-none">
+                            <i class="fas fa-check-circle"></i> RETINALON - 6 MESES (6 gotas)
+                        </a>   
+                        <a href="https://ev.braip.com/checkout/plaovyn6/chezepqr" class="text-decoration-none">
+                            <i class="fas fa-check-circle"></i> RETINALON - 6 MESES (6 gotas)
+                        </a> 
+                        <a href="https://ev.braip.com/checkout/plakgy6l/chezepqr" class="text-decoration-none">
+                            <i class="fas fa-check-circle"></i> RETINALON - 12 MESES (12 gotas)
+                        </a> 
+                        <a href="https://ev.braip.com/checkout/plagywkj/chezepqr" class="text-decoration-none">
+                            <i class="fas fa-check-circle"></i> NEGOCIAÇÃO - RETINALON - 4 MESES (4 gotas) 
+                        </a> 
+                        <a href="https://ev.braip.com/checkout/pla2q2pe/chezepqr" class="text-decoration-none">
+                            <i class="fas fa-check-circle"></i> RETINALON - 12 MESES (12 gotas)
+                        </a>                   
                     </ul>
                 </div>
             </div>
